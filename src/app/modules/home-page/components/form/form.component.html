@@ -1,0 +1,10 @@
+<header>
+    <div class="img"></div>
+    <h1>Consulta de Cep</h1>
+</header>
+<section>
+<label for="cep">CEP:</label>
+<input type="text" name="cep" id="cep" [(ngModel)]="cep">
+<button (click)="buscarEndereco()">Buscar</button>
+</section>
+<app-table [endereco]="endereco"></app-table>
